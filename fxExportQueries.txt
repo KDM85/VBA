@@ -13,7 +13,7 @@ Public Function ExportQueries(strPath As String)
   
   ' Look at each query in the database
   For Each qdf In db.QueryDefs
-    ' Find an unsed file number as a long integer
+    ' Find an unused file number as a long integer
     fh = FreeFile
     ' Open [path\filename] For [mode] As [Freefile]
     Open strPath & "\" & qdf.Name & ".sql" For Append As fh
